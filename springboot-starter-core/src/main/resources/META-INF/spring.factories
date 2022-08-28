@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-cn.zybcn.core.event.SpringEventConfiguration
+cn.zybcn.core.event.SpringEventConfiguration,\
+cn.zybcn.core.handler.HandlerBeanDefinitionRegistrar  
