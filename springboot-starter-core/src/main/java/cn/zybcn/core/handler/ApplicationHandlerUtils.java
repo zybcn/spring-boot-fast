@@ -12,7 +12,7 @@ import java.util.List;
  * @Date 2022-08-27 21:55
  */
 public class ApplicationHandlerUtils implements IHandler<IEvent> {
-    private static ApplicationHandlerUtils instance;
+    private static volatile ApplicationHandlerUtils instance;
     private List<IHandler<IEvent>> handlers;
 
     private ApplicationHandlerUtils() {

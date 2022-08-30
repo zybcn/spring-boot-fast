@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
  */
 public class DomainEventContext {
 
-    private static DomainEventContext instance;
+    private static volatile DomainEventContext instance;
 
     private ApplicationContext context;
 
