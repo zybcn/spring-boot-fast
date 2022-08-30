@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class ApplicationHandlerUtils implements IHandler<IEvent> {
     private static volatile ApplicationHandlerUtils instance;
-    private List<IHandler<IEvent>> handlers;
+    private List<IHandler> handlers;
 
     private ApplicationHandlerUtils() {
         this.handlers = new ArrayList<>();
@@ -21,7 +21,7 @@ public class ApplicationHandlerUtils implements IHandler<IEvent> {
 
     public void addHandlers(List<IHandler> handlers) {
         if (handlers != null) {
-            handlers.addAll(handlers);
+            this.handlers.addAll(handlers);
         }
     }
 
